@@ -54,8 +54,8 @@ class AuthViewModel @Inject constructor(
     private var currentAuthAccount: String? = null
 
     // 添加一个LiveData来传递认证消息
-    private val _authMessage = MutableLiveData<AuthMessage>()
-    val authMessage: LiveData<AuthMessage> = _authMessage
+    private val _authMessage = MutableLiveData<AuthMessage?>()
+    val authMessage: LiveData<AuthMessage?> = _authMessage
 
     // 深色模式状态
     private val _isDarkMode = MutableLiveData<Boolean>()
@@ -294,6 +294,8 @@ class AuthViewModel @Inject constructor(
                     val result = suspendCancellableCoroutine<Boolean> { continuation ->
                         msalApp.acquireTokenSilentAsync(
                             arrayOf("User.Read", "Files.Read.All", "LicenseAssignment.Read.All"),
+                            // 如果是家庭版请使用下方权限，家庭版不能获取许可证分配信息
+                            // arrayOf("User.Read", "Files.Read.All", "Files.ReadWrite.All"),
                             account,
                             msalApp.configuration.defaultAuthority.authorityURL.toString(),
                             object : SilentAuthenticationCallback {

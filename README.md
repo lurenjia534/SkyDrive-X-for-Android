@@ -6,10 +6,10 @@
 ![Platform](https://img.shields.io/badge/platform-Android-brightgreen)
 ![License](https://img.shields.io/badge/license-MIT-green)
 ![Language](https://img.shields.io/badge/language-Kotlin-orange)
-![Stars](https://img.shields.io/github/stars/lurenjia534/NextOneDrivev3)
-![Issues](https://img.shields.io/github/issues/lurenjia534/NextOneDrivev3)
-![Last Commit](https://img.shields.io/github/last-commit/lurenjia534/NextOneDrivev3)
-![Lines of code](https://img.shields.io/tokei/lines/github/lurenjia534/NextOneDrivev3)
+![Stars](https://img.shields.io/github/stars/lurenjia534/SkyDrive-X-for-Android)
+![Issues](https://img.shields.io/github/issues/lurenjia534/SkyDrive-X-for-Android)
+![Last Commit](https://img.shields.io/github/last-commit/lurenjia534/SkyDrive-X-for-Android)
+![Lines of code](https://img.shields.io/tokei/lines/github/lurenjia534/SkyDrive-X-for-Android)
 
 ## Currently, the project only supports self-building
 
